@@ -34,8 +34,8 @@ const Tag = ({text, color, font}) => (
 const App = () => (
   <div className='app'>
     <header>
-      <h1>Title Page</h1>
-      <p>Subheading</p>
+      <h1>Your Company Name</h1>
+      <p>Your Services</p>
     </header>
     <div className='tag-list'>
       {[...new Array(ROWS)].map((_, i) => (
@@ -49,6 +49,10 @@ const App = () => (
       ))}
       <div className='fade'/>
     </div>
+    <a id="source-link" className="meta-link" href="https://haf.solutions" target="_blank">
+        <i className="fa-solid fa-link"></i>
+        <span className="roboto-mono">Contact Us</span>
+      </a>
   </div>
 );
 
